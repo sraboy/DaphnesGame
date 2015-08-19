@@ -50,7 +50,7 @@ namespace DaphnesGame
                 //GenerateColorArray() for SolidColorBrush[ColorArray[x]]
                 Color c = Colors.Red;  //debug
 
-                for (int x = 1; x < level; x++)
+                for (int x = 1; x <= level; x++)
                 {
                     Ellipse ellipse = new Ellipse();
 
