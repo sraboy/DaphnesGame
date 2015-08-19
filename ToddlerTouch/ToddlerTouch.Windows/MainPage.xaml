@@ -5,9 +5,9 @@
     xmlns:local="using:DaphnesGame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" RequestedTheme="Dark"
+    mc:Ignorable="d"
     >
     <Viewbox>
-        <Canvas x:Name="canvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="640" Height="384"/>
+        <Canvas x:Name="canvas" Background="Black" Width="640" Height="384"/>
     </Viewbox>
 </Page>
