@@ -30,7 +30,7 @@ namespace DaphnesGame
         int width = 640, height = 384;
         int ellipse_base_radius = 40, drop_border = 2, drop_radius;
         int current_ellipse_count = 0; //used to check for level completion
-        int level = 1;         //will increase difficulty by increase ellipse_count and adjust sizes/colors
+        int level = 7;         //will increase difficulty by increase ellipse_count and adjust sizes/colors
         int dexterity_help = 10; //within 10px of a drop is close enough. can be adjusted for users with less dexterity.
 
         Ellipse activeEllipse, activeDrop;
@@ -62,17 +62,48 @@ namespace DaphnesGame
 
         private Color GetRandomColor()
         {
+            //int r = 0, g = 0, b = 0;
+            //int rgb = rnd.Next(0, 9);
+            //Color clr;
+            //rgb %= 3;
+            //switch (rgb)
+            //{
+            //    case 0:
+            //        clr = Colors.Red;
+            //        clr.G += (byte)rnd.Next(0, 20);
+            //        clr.B += (byte) rnd.Next(0, 20);
+            //        //r = rnd.Next(100, 256);
+            //        //g = rnd.Next(0, r - 50);
+            //        //b = rnd.Next(0, r - 50);
+            //        break;
+            //    case 1:
+            //        clr = Colors.Blue;
+            //        clr.G += (byte) rnd.Next(0, 20);
+            //        clr.R += (byte) rnd.Next(0, 20);
+            //        //g = rnd.Next(100, 256);
+            //        //r = rnd.Next(0, g - 50);
+            //        //b = rnd.Next(0, g - 50);
+            //        break;
+            //    case 2:
+            //        clr = Colors.Green;
+            //        clr.R += (byte) rnd.Next(0, 20);
+            //        clr.B += (byte) rnd.Next(0, 20);
+            //        //b = rnd.Next(100, 256);
+            //        //g = rnd.Next(0, b - 50);
+            //        //r = rnd.Next(0, b - 50);
+            //        break;
+            //}
             int a = 255;
             int r = rnd.Next(0, 256);
             int g = rnd.Next(0, 256);
             int b = rnd.Next(0, 256);
 
-            //avoid any grayscale(ish) colors
-            //Grayscale is when R, G & B are all the same. I want to avoid
-            //gray(ish) colors so +/- 10 should do the trick.
-            if (Math.Abs(r - b) < 10 && Math.Abs(r - g) < 10 && Math.Abs(g - b) < 10)
+            //avoids any grayscale(ish) colors (+/- 10 across rgb)
+            //and bland earthy colors +/-50 across rgb
+            //just bright colors +/- 75
+            if (Math.Abs(r - b) < 75 && Math.Abs(r - g) < 75 && Math.Abs(g - b) < 75)
                 return GetRandomColor();
-                
+
 
             Color c = Color.FromArgb((byte)a, (byte)r, (byte)g, (byte)b);
             last_color = c;
