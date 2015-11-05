@@ -1,13 +1,20 @@
 ﻿<Page
-    x:Class="DaphnesGame.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:DaphnesGame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Windows81="using:Microsoft.AdMediator.Windows81"
+    x:Class="DaphnesGame.MainPage"
     mc:Ignorable="d"
     >
     <Viewbox>
-        <Canvas x:Name="canvas" Background="Black" Width="640" Height="384"/>
+        <Canvas x:Name="canvas" Background="Black" Width="640" Height="384">
+            <Viewbox x:Name = "adViewBox" >
+                <!--<Windows81:AdMediatorControl x:Name = "AdMediator_8D2C93" Id = "AdMediator-Id-3D42A24A-C412-41F9-9A4D-6813EA7876CA"
+                                             Canvas.Left = "10" Canvas.Top = "10" />-->
+            </Viewbox>
+            <!--<TextBox x:Name = "adCover" />-->
+        </Canvas>
     </Viewbox>
 </Page>

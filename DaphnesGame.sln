@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaphnesGame.Windows", "Todd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaphnesGame.WindowsPhone", "ToddlerTouch\ToddlerTouch.WindowsPhone\DaphnesGame.WindowsPhone.csproj", "{F9B102EB-3712-4574-8529-3E2162E4B581}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C146B612-E0B1-494D-8FD3-8B5FD37133AD}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ToddlerTouch\ToddlerTouch.Shared\ToddlerTouch.Shared.projitems*{e9ca7e41-824f-4e2f-a193-cc404b9f7f38}*SharedItemsImports = 4
@@ -28,9 +30,9 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.Build.0 = Debug|x64
+		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|Any CPU.Deploy.0 = Debug|x64
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|ARM.ActiveCfg = Debug|ARM
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|ARM.Build.0 = Debug|ARM
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -52,15 +54,15 @@ Global
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Release|x86.ActiveCfg = Release|x86
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Release|x86.Build.0 = Release|x86
 		{E9CA7E41-824F-4E2F-A193-CC404B9F7F38}.Release|x86.Deploy.0 = Release|x86
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.ActiveCfg = Debug|ARM
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.Build.0 = Debug|ARM
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|Any CPU.Deploy.0 = Debug|ARM
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|ARM.ActiveCfg = Debug|ARM
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|ARM.Build.0 = Debug|ARM
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|ARM.Deploy.0 = Debug|ARM
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.Build.0 = Debug|Any CPU
-		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.ActiveCfg = Debug|ARM
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.Build.0 = Debug|ARM
+		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x64.Deploy.0 = Debug|ARM
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x86.ActiveCfg = Debug|x86
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x86.Build.0 = Debug|x86
 		{F9B102EB-3712-4574-8529-3E2162E4B581}.Debug|x86.Deploy.0 = Debug|x86
